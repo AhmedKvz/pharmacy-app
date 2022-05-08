@@ -1,0 +1,106 @@
+.view-product-page {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-top: 2em;
+  -ms-overflow-style: none;
+}
+
+.view-product-page::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.product-view {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  background-color: #2f4050;
+  color: white;
+  padding: 2em;
+  border: 1px solid white;
+  margin-right: 2%;
+  border-radius: 10px;
+}
+
+.btn-create {
+  background-color: #2f4050;
+  color: white;
+  padding: 1em;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.btn-create:hover {
+  opacity: 0.7;
+  transition: 0.3s ease;
+}
+
+.product-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
+.btn-edit {
+  background-color: #2f4050;
+  color: white;
+  width: 8em;
+  max-width: 100%;
+  padding: 1em;
+}
+
+.btn-edit:hover {
+  opacity: 0.7;
+  transition: 0.3s ease;
+}
+
+.btn-del {
+  background-color: #ff0000;
+  color: white;
+  width: 100%;
+  max-width: 8em;
+  padding: 1em;
+}
+
+.btn-del:hover {
+  opacity: 0.7;
+  transition: 0.3s ease;
+}
+
+@media screen and (max-width: 1030px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10%;
+    margin-left: 1rem;
+
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 764px) {
+  .product-grid {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 10%;
+  }
+}
+
+/* @media screen and (max-width: 386px) {
+  .product-view {
+    width: 250px;
+  }
+} */

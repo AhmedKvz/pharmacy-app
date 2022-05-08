@@ -1,0 +1,41 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.version h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #293846;
+}
+
+.version .ver {
+  font-size: 0.5rem;
+}
+
+.ahmed {
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 800;
+  color: #2f4050;
+  cursor: pointer;
+}
+
+.ahmed:hover {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 600px) {
+  .ahmed {
+    font-size: 0.8rem;
+  }
+
+  .version h1 {
+    font-size: 1.5rem;
+  }
+}

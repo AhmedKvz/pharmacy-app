@@ -1,0 +1,31 @@
+.app {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  max-width: 1400px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+input {
+  padding: 2em;
+  outline: none;
+  width: 150px;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: inset;
+}
